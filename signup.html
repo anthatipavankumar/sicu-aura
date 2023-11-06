@@ -87,14 +87,14 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript">
 function validation(){
-    let hospitalname=document.getElementById('Hospitalname');
-    var email=
-    var password=localStorage.getItem("Confirm_password");
+     var hospitalname=document.getElementById('Hospitalname');
+    var email=document.getElementById('email');
+    var password=document.getElementById('password');
     var code='7284';
-    let Hospital=localStorage.getItem("Email");
+    let Hospital=localStorage.getItem("hospital_name");
     let Email=localStorage.getItem("Email");
-    let Password=document.getElementById('Password');
-    let Code=document.getElementById('code');
+    let Password=localStorage.getItem("password");
+    let Code=localStorage.getItem("cpassword");
     if((hospitalname==Hospital) && (email==Email) && (password==Password)&&(code==Code))
     {
         navigator.mediaDevices.getUserMedia({audio:false,video:true}).then(stream=>{
